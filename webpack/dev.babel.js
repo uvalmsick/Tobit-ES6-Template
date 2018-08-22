@@ -10,8 +10,8 @@ try {
     ssl.cert = fs.readFileSync(path.join(__dirname, 'ssl', 'ssl.crt'));
     ssl.key = fs.readFileSync(path.join(__dirname, 'ssl', 'ssl.key'));
 } catch (e) {
-    // eslint-disable-next-line no-console
-    console.log('\n---------------------------\nNo SSL Certificate found.\n---------------------------\n');
+    console.warn('\n-------------------------\n', e, 'n-------------------------\n');
+    console.warn('\n-------------------------\nNo SSL Certificate found.\n-------------------------\n');
 }
 
 export default merge(
@@ -29,6 +29,7 @@ export default merge(
             disableHostCheck: true,
             cert: ssl.cert,
             key: ssl.key,
+            https: true
         },
         devtool: 'inline-source-map',
         plugins: [
