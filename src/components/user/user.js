@@ -3,6 +3,7 @@ import htmlToElement from 'html-to-element';
 import './user.scss';
 
 const getUser = (user, onDelete) => {
+    // Create an Individual Child of the Userlist. Now you Can Write the actual HTML-Code in here
     const element = htmlToElement(`
         <div class="user">
             <div class="user__info">
@@ -16,8 +17,10 @@ const getUser = (user, onDelete) => {
             </div>
         </div>`);
 
+    // Pass an EventListener to an Individual User-Element
     element.querySelector('.user__remove').addEventListener('click', () => onDelete());
 
+    // return the created Element
     return element;
 };
 
