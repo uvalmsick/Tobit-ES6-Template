@@ -1,6 +1,6 @@
 [![license](https://img.shields.io/github/license/TobitSoftware/chayns-template-esnext.svg)]() [![GitHub pull requests](https://img.shields.io/github/issues-pr/TobitSoftware/chayns-template-esnext.svg)]() [![](https://img.shields.io/github/issues-pr-closed-raw/TobitSoftware/chayns-template-esnext.svg)]()
 
-chayns with ES.NEXT - Template
+chayns® with ES.NEXT - Template
 ===================
 This template contains a tapp using the chayns API.
 If you're a chayns® manager you can switch to the specific mode and a PersonFinder will get visible.  
@@ -14,19 +14,19 @@ Development
 2. Start your webpack-dev-server for debugging your project with `npm start`
     > The webpack-dev-server is now running on your localhost on the port 8080. If the port is not available you can change it in the dev.babel.js in the webpack folder. 
 
-    > `npm start` runs the server in HTTPS mode. You need to add a ssl certificate to `/webpack/ssl`. If you just need HTTP then you can use `npm run start:http`
+    > `npm start` runs the server in HTTPS mode. If you just need HTTP then you can use `npm run start:http`
 
 3. Implement the example Tapp to your chayns® site .
-    1. Go to configuration -> Tapps
+    1. Go to Administration -> Configuration -> Content -> Tapps
     2. Click `Add Tapp`
     3. Use external content
-    4. Give the Tapp a name and type in the following URL : `http://localhost:8080`
+    4. Give the Tapp a name and type in the following URL : `https://localhost:8080`
     5. Click `add`
 4. Start development.
 
 Building
 ---------
-You can build this project via `npm run build`.
+You can build this project via `npm run build` for a Live version.
 
 You can also build this project with sourceMaps for testing via `npm run build:staging`.
 
