@@ -3,7 +3,7 @@ import htmlToElement from 'html-to-element';
 import './user.scss';
 
 const getUser = (user, onDelete) => {
-    // Create an Individual Child of the Userlist. Now you Can Write the actual HTML-Code in here
+    // Create an Individual Child of the Personlist. Now you Can Write the actual HTML-Code in here
     const element = htmlToElement(`
         <div class="user">
             <div class="user__info">
